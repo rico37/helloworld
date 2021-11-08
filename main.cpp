@@ -21,6 +21,9 @@ int main()
 
   for (auto it = mapChar.begin(); it != mapChar.end(); it++)
     std::cout << it->first << "  " << it->second << std::endl;
+  
+  for (auto &s : ss)
+    std::cout << mapChar[s] << std::endl;  
 
 
   return 0;
