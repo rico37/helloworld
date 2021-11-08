@@ -14,7 +14,11 @@ int main()
   for(auto s = ss.rbegin(); s < ss.rend(); s++)
 	  std::cout << *s;
   for(auto &s : ss)
-     mapChar.insert(std::make_pair(s,idx++));
+     { 
+       //mapChar.insert(std::make_pair(s,idx++)); 
+       ++mapChar[s];
+     }
+
 	for(auto it=mapChar.begin(); it!=mapChar.end();it++)
        std::cout << it->first << "  " << it->second << std::endl;   
 return 0;
